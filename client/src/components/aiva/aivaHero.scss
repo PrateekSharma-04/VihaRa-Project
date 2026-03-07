@@ -1,0 +1,138 @@
+.aiva-wave {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 45% 55% 60% 40% / 40% 60% 50% 50%;
+  border: 2px solid;
+  opacity: 0.7;
+  animation: waveMove 8s ease-in-out infinite;
+
+  &.wave1 {
+    border-color: #7bb4b0;
+  }
+
+  &.wave2 {
+    border-color: #5c88a8;
+    width: 320px;
+    height: 320px;
+    animation-duration: 10s;
+  }
+
+  &.wave3 {
+    border-color: #9a8ac7;
+    width: 380px;
+    height: 380px;
+    animation-duration: 12s;
+  }
+}
+
+@keyframes waveMove {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.05);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* Core AI Circle */
+
+.aiva-core {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: serif;
+  font-size: 36px;
+
+  color: #1F3D34; // FIXED TEXT COLOR
+
+  background: rgba(255, 255, 255, 0.1);
+
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  animation: breathe 6s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Floating Dots */
+
+.dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #7bb4b0;
+
+  animation: float 6s ease-in-out infinite;
+
+  &.dot1 {
+    top: 20%;
+    left: 60%;
+    animation-delay: 0s;
+  }
+
+  &.dot2 {
+    top: 70%;
+    left: 40%;
+    animation-delay: 1s;
+  }
+
+  &.dot3 {
+    top: 30%;
+    left: 30%;
+    animation-delay: 2s;
+  }
+
+  &.dot4 {
+    top: 60%;
+    left: 70%;
+    animation-delay: 3s;
+  }
+
+  &.dot5 {
+    top: 50%;
+    left: 15%;
+    animation-delay: 4s;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
