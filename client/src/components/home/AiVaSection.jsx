@@ -1,4 +1,4 @@
-import aiVaImage from "../../assets/images/AiVa-guidence.png";
+import aiVaImage from "../../assets/Images/AiVa-guidence.png";
 import { CheckCircle, MapPin, Compass } from "lucide-react";
 
 const AiVaSection = () => {

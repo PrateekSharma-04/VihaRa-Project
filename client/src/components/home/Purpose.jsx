@@ -1,4 +1,4 @@
-import idea from "../../assets/images/VihaRa-Idea.png";
+import idea from "../../assets/Images/VihaRa-Idea.png";
 
 const Purpose = () => {
   return (

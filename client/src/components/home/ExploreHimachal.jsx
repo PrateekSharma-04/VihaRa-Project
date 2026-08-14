@@ -1,6 +1,6 @@
 import { useState } from "react";
-import map from "../../assets/images/himachal-map.png";
-import aiva from "../../assets/images/AiVa-guidence.png";
+import map from "../../assets/Images/himachal-map.png";
+import aiva from "../../assets/Images/AiVa-guidence.png";
 
 const regions = {
   "Western Himachal": ["kangra", "chamba"],

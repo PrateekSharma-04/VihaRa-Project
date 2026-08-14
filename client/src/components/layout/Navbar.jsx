@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Search, User, Menu, X } from "lucide-react";
-import logo from "../../assets/images/Vihara main logo.png";
+import logo from "../../assets/Images/Vihara main logo.png";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);

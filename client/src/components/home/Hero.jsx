@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import malana from "../../assets/images/malana-village.jpg";
-import kalpa from "../../assets/images/kalpa-kinnaur.jpg";
-import jibhi from "../../assets/images/jibhi-tirthan.jpg";
-import nako from "../../assets/images/nako-village.jpg";
-import thanedar from "../../assets/images/thanedar-valley.jpg";
+import malana from "../../assets/Images/malana-village.jpg";
+import kalpa from "../../assets/Images/kalpa-kinnaur.jpg";
+import jibhi from "../../assets/Images/jibhi-tirthan.jpg";
+import nako from "../../assets/Images/nako-village.jpg";
+import thanedar from "../../assets/Images/thanedar-valley.jpg";
 
 const slides = [
   {

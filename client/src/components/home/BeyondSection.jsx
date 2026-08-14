@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import gadaGushaini from "../../assets/images/gada-gushaini.jpg";
-import churahValley from "../../assets/images/churah-valley.jpg";
-import komicVillage from "../../assets/images/komic-village.jpg";
-import rajgundhaValley from "../../assets/images/rajgundha-valley.jpg";
-import kotkhaiVillage from "../../assets/images/kotkhai-village.jpg";
+import gadaGushaini from "../../assets/Images/gada-gushaini.jpg";
+import churahValley from "../../assets/Images/churah-valley.jpg";
+import komicVillage from "../../assets/Images/komic-village.jpg";
+import rajgundhaValley from "../../assets/Images/rajgundha-valley.jpg";
+import kotkhaiVillage from "../../assets/Images/kotkhai-village.jpg";
 
 const villages = [
   {
