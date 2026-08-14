@@ -19,27 +19,19 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const textColor =
-    scrolled || isAiVaPage ? "text-[#1F3D34]" : "text-white";
+  const textColor = scrolled || isAiVaPage ? "text-[#1F3D34]" : "text-white";
 
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-white/70 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
+        scrolled ? "bg-white/70 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
       <div className="w-full px-6 md:px-10 lg:px-16 xl:px-24 2xl:px-32">
         <div className="flex items-center justify-between h-20">
-
           {/* Logo */}
           <Link to="/">
-            <img
-              src={logo}
-              alt="Vihara Logo"
-              className="h-10 md:h-15 w-auto"
-            />
+            <img src={logo} alt="Vihara Logo" className="h-10 md:h-15 w-auto" />
           </Link>
 
           {/* Desktop Nav Links */}
@@ -71,7 +63,6 @@ const Navbar = () => {
               {menuOpen ? <X size={26} /> : <Menu size={26} />}
             </button>
           </div>
-
         </div>
       </div>
 

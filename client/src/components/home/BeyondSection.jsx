@@ -55,7 +55,6 @@ const BeyondSection = () => {
 
   return (
     <section className="py-24 bg-[#F5F2EC] overflow-hidden">
-
       {/* Heading */}
       <div className="text-center mb-16">
         <p className="uppercase tracking-widest text-sm text-gray-500">
@@ -68,7 +67,6 @@ const BeyondSection = () => {
 
       {/* Carousel */}
       <div className="relative flex items-center justify-center h-[550px]">
-
         {/* Left Arrow */}
         <button
           onClick={prev}
@@ -100,12 +98,10 @@ const BeyondSection = () => {
               "translate-x-0 scale-100 opacity-100 z-30 shadow-2xl";
           } else if (offset === -1) {
             // LEFT CARD
-            positionClass =
-              "-translate-x-[240px] scale-90 opacity-60 z-20";
+            positionClass = "-translate-x-[240px] scale-90 opacity-60 z-20";
           } else if (offset === 1) {
             // RIGHT CARD
-            positionClass =
-              "translate-x-[240px] scale-90 opacity-60 z-20";
+            positionClass = "translate-x-[240px] scale-90 opacity-60 z-20";
           } else {
             // HIDDEN CARDS
             positionClass = "opacity-0 scale-75 z-0";
@@ -130,9 +126,7 @@ const BeyondSection = () => {
                 </div>
 
                 <h3 className="text-3xl font-bold">{item.title}</h3>
-                <p className="text-sm opacity-90 mt-2">
-                  {item.description}
-                </p>
+                <p className="text-sm opacity-90 mt-2">{item.description}</p>
               </div>
             </div>
           );
@@ -146,14 +140,11 @@ const BeyondSection = () => {
             key={index}
             onClick={() => setCurrent(index)}
             className={`h-2 rounded-full transition-all duration-300 ${
-              index === current
-                ? "w-8 bg-[#1F3D34]"
-                : "w-3 bg-gray-400"
+              index === current ? "w-8 bg-[#1F3D34]" : "w-3 bg-gray-400"
             }`}
           />
         ))}
       </div>
-
     </section>
   );
 };

@@ -62,7 +62,6 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      
       {/* Slider Container */}
       <div
         className="flex transition-transform duration-1000 ease-in-out h-full"
@@ -70,7 +69,6 @@ const Hero = () => {
       >
         {slides.map((slide, index) => (
           <div key={index} className="min-w-full h-full relative">
-            
             {/* Background Image */}
             <img
               src={slide.image}
@@ -129,7 +127,6 @@ const Hero = () => {
           <ChevronRight size={20} />
         </button>
       </div>
-
     </section>
   );
 };
