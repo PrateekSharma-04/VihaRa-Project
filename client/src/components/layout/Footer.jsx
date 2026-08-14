@@ -1,4 +1,4 @@
-import logo from "../../assets/images/Vihara main logo.png";
+import logo from "../../assets/Images/Vihara main logo.png";
 import { Instagram, Twitter, Facebook, Linkedin } from "lucide-react";
 
 const Footer = () => {
